@@ -1,0 +1,63 @@
+name: blue_core
+description: "Flutter model factory library"
+repository: 'https://github.com/ysfgrl/f_model_factory.git'
+homepage: 'https://github.com/ysfgrl/f_model_factory.git'
+version: 1.0.0
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.8
+  cupertino_icons: ^1.0.6
+  dio: ^5.0.0
+  mime: ^2.0.0
+  file_picker: ^10.3.10
+  flutter_form_builder: ^10.3.0+2
+  form_builder_validators: ^11.0.0
+  form_builder_file_picker: ^5.1.0
+  community_material_icon: ^5.9.55
+  flutter_bloc: ^9.1.1
+  equatable: ^2.1.0
+  json_annotation: ^4.6.0
+  firebase_core: ^4.12.1
+  firebase_messaging: ^16.4.3
+  flutter_local_notifications: ^22.2.0
+  ffi: ^2.1.0
+  web: ^1.1.1
+  url_launcher: ^6.3.0
+  html: ^0.15.3
+  fl_chart: ^1.2.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  pigeon: ^22.7.4
+flutter:
+  uses-material-design: true
+  plugin:
+    platforms:
+      android:
+        package: com.ysfgrl.blue_core
+        pluginClass: BlueCorePlugin
+      ios:
+        pluginClass: BlueCorePlugin
+      linux:
+        dartPluginClass: BlueCoreLinux
+        dartFileName: src/platform_interface/blue_core_linux.dart
+      macos:
+        pluginClass: BlueCorePlugin
+      web:
+        pluginClass: BlueCoreWeb
+        fileName: src/platform_interface/blue_core_web.dart
+      windows:
+        dartPluginClass: BlueCoreWindows
+        dartFileName: src/platform_interface/blue_core_windows.dart
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
